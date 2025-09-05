@@ -61,7 +61,21 @@ class MainActivity : ComponentActivity() {
                     )
                 }
 
+                composable<SigInScreenObj> {
+                    signInScreen(
+                        onClickBack = {
+                            navcontroller.popBackStack()
+                        },
+                        onClickGoogle = {},
+                        onClickApple = {},
+                        onClickRestartPass = {
 
+                        },
+                        clickRegister = {
+
+                        }
+                    )
+                }
 
             }
         }
