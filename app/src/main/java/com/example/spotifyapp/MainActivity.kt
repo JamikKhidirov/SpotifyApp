@@ -17,7 +17,10 @@ import com.example.spotifyapp.view.screens.registerSignInScreen
 import com.example.spotifyapp.view.screens.signInScreen
 import com.example.spotifyapp.view.screens.startedScreen
 import com.example.spotifyapp.view.screens.splashScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

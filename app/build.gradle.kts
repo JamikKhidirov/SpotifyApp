@@ -2,8 +2,12 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0" // версия вашей Kotlin
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.2.10" // версия вашей Kotlin
+    id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
+    id("kotlin-kapt")
 }
+
 
 android {
     namespace = "com.example.spotifyapp"
@@ -47,7 +51,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.36.0")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.1")
-
+    kapt("com.google.dagger:hilt-compiler:2.56")
+    implementation("com.google.dagger:hilt-android:2.56")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

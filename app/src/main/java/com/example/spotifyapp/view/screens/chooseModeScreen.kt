@@ -38,7 +38,6 @@ import com.example.spotifyapp.view.componts.startedButton
 
 
 @Composable
-@Preview(showSystemUi = true)
 fun chooseModeScreen(
     onClick: () -> Unit
 ){

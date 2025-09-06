@@ -12,6 +12,7 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.spotifyapp.R
@@ -47,6 +48,7 @@ fun splashScreen(
     ) {
         Image(painter = painterResource(R.drawable.splashvec),
             "",
-            modifier = Modifier.width(200.dp).height(60.dp))
+            modifier = Modifier.width(200.dp).height(60.dp),
+            contentScale = ContentScale.Crop)
     }
 }
