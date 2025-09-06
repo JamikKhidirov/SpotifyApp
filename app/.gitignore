@@ -1,1 +1,25 @@
-/build
+# Build folders
+/build/
+/app/build/
+
+# IDE files
+/.idea/
+/*.iml
+
+# Local configuration file (sdk path etc)
+local.properties
+
+# Gradle cache
+/.gradle/
+
+# Gradlew scripts
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# Intermediate build files
+/build/intermediates/
+/captures/
+
+# System files
+.DS_Store
