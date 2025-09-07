@@ -1,7 +1,6 @@
-package com.example.spotifyapp.modal
+package com.example.spotifyapp.modal.dataobj
 
 import kotlinx.serialization.Serializable
-
 
 @Serializable
 object SplashScreenObj

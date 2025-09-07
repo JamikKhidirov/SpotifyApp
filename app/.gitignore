@@ -1,1 +1,37 @@
-/build
+# Игнорировать папки и файлы сборки
+/build/
+/app/build/
+
+# Локальные настройки Android Studio
+/.idea/
+/.gradle/
+/local.properties
+
+# Файлы кэша и индексов
+*.iml
+*.hprof
+
+# Файлы логов
+*.log
+
+# Файлы, содержащие ключи и приватную информацию
+*.jks
+*.keystore
+
+# Исключить студийные и системные файлы
+.DS_Store
+*.swp
+*~
+
+# Исключить captures и navigation editor state
+/captures/
+/.navigation/
+
+# Исключить файлы Gradle Wrapper временные
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Файлы настроек IDE
+/.idea/assetWizardSettings.xml
+/.idea/gradle.xml
+/.idea/caches/

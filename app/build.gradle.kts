@@ -5,6 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "2.2.10" // версия вашей Kotlin
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
+    id("com.google.gms.google-services")
     id("kotlin-kapt")
 }
 
@@ -21,6 +22,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -53,6 +55,14 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.1")
     kapt("com.google.dagger:hilt-compiler:2.56")
     implementation("com.google.dagger:hilt-android:2.56")
+    implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
+    implementation("com.google.firebase:firebase-bom:34.2.0")
+    implementation("com.google.firebase:firebase-auth")
+
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:21.4.0")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
