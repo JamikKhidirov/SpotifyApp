@@ -142,7 +142,12 @@ fun SignInScreen(
             text = if (isLoading) "Загрузка..." else "Войти",
             onClick = {
                 if (!isLoading) {
-                    viewModel.login(userName.trim(), password.trim())
+                    if (userName.trim().isEmpty() || password.trim().isEmpty()){
+                        return@startedButton
+                    }
+                    else{
+                        viewModel.login(userName.trim(), password.trim())
+                    }
                 }
             },
             verticalPadding = 25.dp,
